@@ -20,12 +20,12 @@ extern "C" DLLEXPORT float print_float(float X) {
 }
 
 extern "C" {
-    int global();
+    int scope();
 }
 
 int main() {
-    if(global() == 6)
-      std::cout << "PASSED Result: " << global() << std::endl;
+    if(scope() == 6)
+      std::cout << "PASSED Result: " << scope() << std::endl;
   	else 
-  	  std::cout << "FALIED Result: " << global() << std::endl;
+  	  std::cout << "FALIED Result: " << scope() << std::endl;
 }
