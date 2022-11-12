@@ -37,7 +37,7 @@ function validate {
 
 echo "Test *****"
 
-cd hardertests/implicit/
+cd ../implicit/
 pwd
 rm -rf output.ll imp
 "$COMP" ./implicit.c
