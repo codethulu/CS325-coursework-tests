@@ -64,3 +64,10 @@ rm -rf output.ll global
 "$COMP" ./global.c
 $CLANG driver.cpp output.ll  -o global
 validate "./global"
+
+cd ../lazyeval/
+pwd
+rm -rf output.ll lazyeval
+"$COMP" ./lazyeval.c
+$CLANG driver.cpp output.ll -o lazyeval
+validate "./lazyeval"
