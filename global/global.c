@@ -6,7 +6,7 @@ int foo() {
     return a;
 }
 
-int scope() {
+int global() {
     a = 5;
     return foo();
 }
