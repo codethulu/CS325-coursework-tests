@@ -67,7 +67,7 @@ validate "./global"
 
 cd ../lazyeval/
 pwd
-rm -rf output.ll global
+rm -rf output.ll lazyeval
 "$COMP" ./lazyeval.c
-$CLANG driver.cpp output.ll  -o lazyeval
+$CLANG driver.cpp output.ll -o lazyeval
 validate "./lazyeval"
