@@ -65,6 +65,13 @@ rm -rf output.ll global
 $CLANG driver.cpp output.ll  -o global
 validate "./global"
 
+cd ../returns/
+pwd
+rm -rf output.ll returns
+"$COMP" ./returns.c
+$CLANG driver.cpp output.ll  -o returns
+validate "./returns"
+
 cd ../unary2/
 pwd
 rm -rf output.ll unary2
