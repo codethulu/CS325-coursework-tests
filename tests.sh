@@ -65,9 +65,18 @@ rm -rf output.ll global
 $CLANG driver.cpp output.ll  -o global
 validate "./global"
 
+cd ../unary2/
+pwd
+rm -rf output.ll unary2
+"$COMP" ./unary2.c
+$CLANG driver.cpp output.ll  -o unary2
+validate "./unary2"
+
 cd ../lazyeval/
 pwd
 rm -rf output.ll lazyeval
 "$COMP" ./lazyeval.c
 $CLANG driver.cpp output.ll -o lazyeval
 validate "./lazyeval"
+
+echo "***** ALL (HARDER) TESTS PASSED *****"
