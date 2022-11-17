@@ -100,4 +100,5 @@ rm -rf output.ll lazyeval
 $CLANG driver.cpp output.ll -o lazyeval
 validate "./lazyeval"
 
-echo "***** ALL (HARDER) TESTS PASSED *****"
+echo -e "\e[1;33m***** 🤓 ALL (HARDER) TESTS PASSED 🤓 \e[1;33m*****"
+
