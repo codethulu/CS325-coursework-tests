@@ -79,6 +79,13 @@ rm -rf output.ll unary2
 $CLANG driver.cpp output.ll  -o unary2
 validate "./unary2"
 
+cd ../while/
+pwd
+rm -rf output.ll while
+"$COMP" ./while.c
+$CLANG driver.cpp output.ll  -o while
+validate "./while"
+
 cd ../assign/
 pwd
 rm -rf output.ll assign
