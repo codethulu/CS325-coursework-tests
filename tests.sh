@@ -79,6 +79,13 @@ rm -rf output.ll unary2
 $CLANG driver.cpp output.ll  -o unary2
 validate "./unary2"
 
+cd ../assign/
+pwd
+rm -rf output.ll assign
+"$COMP" ./assign.c
+$CLANG driver.cpp output.ll  -o assign
+validate "./assign"
+
 cd ../lazyeval/
 pwd
 rm -rf output.ll lazyeval
